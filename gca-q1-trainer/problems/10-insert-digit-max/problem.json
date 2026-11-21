@@ -1,0 +1,220 @@
+{
+  "id": 10,
+  "slug": "insert-digit-max",
+  "title": "Insert Digit Max",
+  "difficulty": "tricky",
+  "topic": "Place-value building / negatives",
+  "statement": "Given an integer `n` (possibly negative) and a digit `d`, insert `d` somewhere into the decimal representation of `n` (before the first digit, between digits, or after the last) to make the largest possible number. You may not remove or reorder digits, and for a negative number the minus sign stays in front.\n\nReturn the result as a long.\n\nFor example, inserting 6 into 73 gives 763, and inserting 3 into -132 gives -1323.",
+  "returnType": "long",
+  "params": [
+    {
+      "type": "int",
+      "name": "n"
+    },
+    {
+      "type": "int",
+      "name": "d"
+    }
+  ],
+  "examples": [
+    {
+      "args": [
+        73,
+        6
+      ],
+      "expected": 763,
+      "explanation": "Options: 673, 763, 736. The largest is 763."
+    },
+    {
+      "args": [
+        -132,
+        3
+      ],
+      "expected": -1323,
+      "explanation": "Options: -3132, -1332, -1323, -1323. The largest (closest to zero) is -1323."
+    }
+  ],
+  "constraints": [
+    "-10^9 <= n <= 10^9",
+    "0 <= d <= 9"
+  ],
+  "visible": [
+    {
+      "args": [
+        268,
+        5
+      ],
+      "expected": 5268
+    },
+    {
+      "args": [
+        670,
+        0
+      ],
+      "expected": 6700
+    },
+    {
+      "args": [
+        999,
+        9
+      ],
+      "expected": 9999
+    }
+  ],
+  "hidden": [
+    {
+      "args": [
+        0,
+        0
+      ],
+      "expected": 0
+    },
+    {
+      "args": [
+        0,
+        5
+      ],
+      "expected": 50
+    },
+    {
+      "args": [
+        5,
+        0
+      ],
+      "expected": 50
+    },
+    {
+      "args": [
+        5,
+        5
+      ],
+      "expected": 55
+    },
+    {
+      "args": [
+        5,
+        9
+      ],
+      "expected": 95
+    },
+    {
+      "args": [
+        9,
+        5
+      ],
+      "expected": 95
+    },
+    {
+      "args": [
+        1000000000,
+        9
+      ],
+      "expected": 91000000000
+    },
+    {
+      "args": [
+        1000000000,
+        0
+      ],
+      "expected": 10000000000
+    },
+    {
+      "args": [
+        -1000000000,
+        0
+      ],
+      "expected": -1000000000
+    },
+    {
+      "args": [
+        -1000000000,
+        9
+      ],
+      "expected": -10000000009
+    },
+    {
+      "args": [
+        -5,
+        0
+      ],
+      "expected": -5
+    },
+    {
+      "args": [
+        -5,
+        5
+      ],
+      "expected": -55
+    },
+    {
+      "args": [
+        -5,
+        9
+      ],
+      "expected": -59
+    },
+    {
+      "args": [
+        -5,
+        3
+      ],
+      "expected": -35
+    },
+    {
+      "args": [
+        -123,
+        2
+      ],
+      "expected": -1223
+    },
+    {
+      "args": [
+        -321,
+        2
+      ],
+      "expected": -2321
+    },
+    {
+      "args": [
+        -999,
+        0
+      ],
+      "expected": -999
+    },
+    {
+      "args": [
+        123,
+        2
+      ],
+      "expected": 2123
+    },
+    {
+      "args": [
+        321,
+        2
+      ],
+      "expected": 3221
+    },
+    {
+      "args": [
+        10,
+        0
+      ],
+      "expected": 100
+    },
+    {
+      "args": [
+        -10,
+        0
+      ],
+      "expected": -10
+    },
+    {
+      "args": [
+        999999999,
+        9
+      ],
+      "expected": 9999999999
+    }
+  ]
+}

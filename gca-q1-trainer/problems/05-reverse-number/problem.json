@@ -1,0 +1,158 @@
+{
+  "id": 5,
+  "slug": "reverse-number",
+  "title": "Reverse Number",
+  "difficulty": "standard",
+  "topic": "digit building by append",
+  "statement": "Given a non-negative integer `n`, return the number formed by writing its decimal digits in reverse order. Leading zeros of the result are dropped, since the result is an ordinary integer.\n\nFor example, 123 becomes 321 and 120 becomes 21.",
+  "returnType": "int",
+  "params": [
+    {
+      "type": "int",
+      "name": "n"
+    }
+  ],
+  "examples": [
+    {
+      "args": [
+        120
+      ],
+      "expected": 21,
+      "explanation": "Reversed digits are 021, which is the number 21."
+    },
+    {
+      "args": [
+        9081
+      ],
+      "expected": 1809,
+      "explanation": "Digits 9,0,8,1 reversed are 1,8,0,9."
+    }
+  ],
+  "constraints": [
+    "0 <= n <= 10^9"
+  ],
+  "visible": [
+    {
+      "args": [
+        123
+      ],
+      "expected": 321
+    },
+    {
+      "args": [
+        4500
+      ],
+      "expected": 54
+    },
+    {
+      "args": [
+        7
+      ],
+      "expected": 7
+    }
+  ],
+  "hidden": [
+    {
+      "args": [
+        0
+      ],
+      "expected": 0
+    },
+    {
+      "args": [
+        5
+      ],
+      "expected": 5
+    },
+    {
+      "args": [
+        10
+      ],
+      "expected": 1
+    },
+    {
+      "args": [
+        100
+      ],
+      "expected": 1
+    },
+    {
+      "args": [
+        1000000000
+      ],
+      "expected": 1
+    },
+    {
+      "args": [
+        999999999
+      ],
+      "expected": 999999999
+    },
+    {
+      "args": [
+        123456789
+      ],
+      "expected": 987654321
+    },
+    {
+      "args": [
+        1221
+      ],
+      "expected": 1221
+    },
+    {
+      "args": [
+        1000
+      ],
+      "expected": 1
+    },
+    {
+      "args": [
+        101
+      ],
+      "expected": 101
+    },
+    {
+      "args": [
+        1090
+      ],
+      "expected": 901
+    },
+    {
+      "args": [
+        20
+      ],
+      "expected": 2
+    },
+    {
+      "args": [
+        900000
+      ],
+      "expected": 9
+    },
+    {
+      "args": [
+        987654321
+      ],
+      "expected": 123456789
+    },
+    {
+      "args": [
+        11
+      ],
+      "expected": 11
+    },
+    {
+      "args": [
+        4005
+      ],
+      "expected": 5004
+    },
+    {
+      "args": [
+        500400
+      ],
+      "expected": 4005
+    }
+  ]
+}

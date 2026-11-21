@@ -1,0 +1,186 @@
+{
+  "id": 9,
+  "slug": "count-overlapping",
+  "title": "Count Overlapping",
+  "difficulty": "tricky",
+  "topic": "indexOf / substring",
+  "statement": "Given strings `s` and `p`, return how many times `p` occurs in `s`, counting occurrences that overlap. Matching is case-sensitive.\n\nFor example, `\"aa\"` occurs 3 times in `\"aaaa\"`.",
+  "returnType": "int",
+  "params": [
+    {
+      "type": "String",
+      "name": "s"
+    },
+    {
+      "type": "String",
+      "name": "p"
+    }
+  ],
+  "examples": [
+    {
+      "args": [
+        "aaaa",
+        "aa"
+      ],
+      "expected": 3,
+      "explanation": "Matches start at indices 0, 1 and 2."
+    },
+    {
+      "args": [
+        "banana",
+        "ana"
+      ],
+      "expected": 2,
+      "explanation": "Matches start at indices 1 and 3 and share the middle 'a'."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length() <= 100",
+    "1 <= p.length() <= 100",
+    "s and p contain only English letters (a-z, A-Z)"
+  ],
+  "visible": [
+    {
+      "args": [
+        "abcabc",
+        "bc"
+      ],
+      "expected": 2
+    },
+    {
+      "args": [
+        "hello",
+        "z"
+      ],
+      "expected": 0
+    },
+    {
+      "args": [
+        "abab",
+        "ab"
+      ],
+      "expected": 2
+    }
+  ],
+  "hidden": [
+    {
+      "args": [
+        "a",
+        "a"
+      ],
+      "expected": 1
+    },
+    {
+      "args": [
+        "a",
+        "b"
+      ],
+      "expected": 0
+    },
+    {
+      "args": [
+        "aaa",
+        "aaaa"
+      ],
+      "expected": 0
+    },
+    {
+      "args": [
+        "aaaaa",
+        "a"
+      ],
+      "expected": 5
+    },
+    {
+      "args": [
+        "aaaaa",
+        "aa"
+      ],
+      "expected": 4
+    },
+    {
+      "args": [
+        "aaaaa",
+        "aaa"
+      ],
+      "expected": 3
+    },
+    {
+      "args": [
+        "abcd",
+        "abcd"
+      ],
+      "expected": 1
+    },
+    {
+      "args": [
+        "ababababa",
+        "aba"
+      ],
+      "expected": 4
+    },
+    {
+      "args": [
+        "abcabcabc",
+        "abcabc"
+      ],
+      "expected": 2
+    },
+    {
+      "args": [
+        "mississippi",
+        "issi"
+      ],
+      "expected": 2
+    },
+    {
+      "args": [
+        "mississippi",
+        "ss"
+      ],
+      "expected": 2
+    },
+    {
+      "args": [
+        "aabaabaab",
+        "aab"
+      ],
+      "expected": 3
+    },
+    {
+      "args": [
+        "abcde",
+        "e"
+      ],
+      "expected": 1
+    },
+    {
+      "args": [
+        "abcde",
+        "a"
+      ],
+      "expected": 1
+    },
+    {
+      "args": [
+        "AaAa",
+        "aA"
+      ],
+      "expected": 1
+    },
+    {
+      "args": [
+        "aaaa",
+        "aaa"
+      ],
+      "expected": 2
+    },
+    {
+      "args": [
+        "abab",
+        "ba"
+      ],
+      "expected": 1
+    }
+  ]
+}
