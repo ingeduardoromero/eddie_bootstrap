@@ -1,0 +1,28 @@
+{
+  "name": "gca-q1-trainer",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "fetch-ecj": "node scripts/fetch-ecj.mjs",
+    "build-problems": "node scripts/build-problems.mjs",
+    "dev": "npm run build-problems && vite",
+    "build": "npm run build-problems && npm run fetch-ecj && tsc --noEmit && vite build",
+    "validate": "tsx scripts/validate.ts",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vite": "^5.4.0"
+  },
+  "dependencies": {
+    "@codemirror/commands": "^6.7.0",
+    "@codemirror/lang-java": "^6.0.1",
+    "@codemirror/language": "^6.10.0",
+    "@codemirror/state": "^6.4.0",
+    "@codemirror/theme-one-dark": "^6.1.2",
+    "@codemirror/view": "^6.34.0"
+  }
+}

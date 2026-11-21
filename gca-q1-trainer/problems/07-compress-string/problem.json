@@ -1,0 +1,141 @@
+{
+  "id": 7,
+  "slug": "compress-string",
+  "title": "Compress String",
+  "difficulty": "standard",
+  "topic": "StringBuilder / charAt",
+  "statement": "Given a string `s`, compress each run of identical consecutive characters: write the character, followed by the run length only if the run is longer than 1.\n\nFor example, `\"aaabcc\"` becomes `\"a3bc2\"`.",
+  "returnType": "String",
+  "params": [
+    {
+      "type": "String",
+      "name": "s"
+    }
+  ],
+  "examples": [
+    {
+      "args": [
+        "zzzz"
+      ],
+      "expected": "z4",
+      "explanation": "One run of four z."
+    },
+    {
+      "args": [
+        "abbbcd"
+      ],
+      "expected": "ab3cd",
+      "explanation": "Only the run of b is longer than 1."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length() <= 100",
+    "s contains only English letters (a-z, A-Z)"
+  ],
+  "visible": [
+    {
+      "args": [
+        "aaabcc"
+      ],
+      "expected": "a3bc2"
+    },
+    {
+      "args": [
+        "abc"
+      ],
+      "expected": "abc"
+    },
+    {
+      "args": [
+        "aabbaa"
+      ],
+      "expected": "a2b2a2"
+    }
+  ],
+  "hidden": [
+    {
+      "args": [
+        "a"
+      ],
+      "expected": "a"
+    },
+    {
+      "args": [
+        "aa"
+      ],
+      "expected": "a2"
+    },
+    {
+      "args": [
+        "ab"
+      ],
+      "expected": "ab"
+    },
+    {
+      "args": [
+        "aaaaaaaaaa"
+      ],
+      "expected": "a10"
+    },
+    {
+      "args": [
+        "aaaaaaaaaaaa"
+      ],
+      "expected": "a12"
+    },
+    {
+      "args": [
+        "abababab"
+      ],
+      "expected": "abababab"
+    },
+    {
+      "args": [
+        "AAaa"
+      ],
+      "expected": "A2a2"
+    },
+    {
+      "args": [
+        "aabcccdddd"
+      ],
+      "expected": "a2bc3d4"
+    },
+    {
+      "args": [
+        "xyzzz"
+      ],
+      "expected": "xyz3"
+    },
+    {
+      "args": [
+        "bbbbbbbbbbc"
+      ],
+      "expected": "b10c"
+    },
+    {
+      "args": [
+        "cabbb"
+      ],
+      "expected": "cab3"
+    },
+    {
+      "args": [
+        "qqqqqqqqqqqqqqqqqqqqqqqqq"
+      ],
+      "expected": "q25"
+    },
+    {
+      "args": [
+        "mississippi"
+      ],
+      "expected": "mis2is2ip2i"
+    },
+    {
+      "args": [
+        "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+      ],
+      "expected": "z100"
+    }
+  ]
+}

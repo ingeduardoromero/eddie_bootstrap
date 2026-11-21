@@ -1,0 +1,146 @@
+{
+  "id": 1,
+  "slug": "digit-sum",
+  "title": "Digit Sum",
+  "difficulty": "easy",
+  "topic": "digit loops with % and /",
+  "statement": "Given a non-negative integer `n`, return the sum of its decimal digits.\n\nFor example, the digits of 507 are 5, 0 and 7, so the answer is 12.",
+  "returnType": "int",
+  "params": [
+    {
+      "type": "int",
+      "name": "n"
+    }
+  ],
+  "examples": [
+    {
+      "args": [
+        38
+      ],
+      "expected": 11,
+      "explanation": "3 + 8 = 11"
+    },
+    {
+      "args": [
+        100
+      ],
+      "expected": 1,
+      "explanation": "1 + 0 + 0 = 1"
+    }
+  ],
+  "constraints": [
+    "0 <= n <= 10^9"
+  ],
+  "visible": [
+    {
+      "args": [
+        123
+      ],
+      "expected": 6
+    },
+    {
+      "args": [
+        9045
+      ],
+      "expected": 18
+    },
+    {
+      "args": [
+        7
+      ],
+      "expected": 7
+    }
+  ],
+  "hidden": [
+    {
+      "args": [
+        0
+      ],
+      "expected": 0
+    },
+    {
+      "args": [
+        5
+      ],
+      "expected": 5
+    },
+    {
+      "args": [
+        10
+      ],
+      "expected": 1
+    },
+    {
+      "args": [
+        99
+      ],
+      "expected": 18
+    },
+    {
+      "args": [
+        100
+      ],
+      "expected": 1
+    },
+    {
+      "args": [
+        1000000000
+      ],
+      "expected": 1
+    },
+    {
+      "args": [
+        999999999
+      ],
+      "expected": 81
+    },
+    {
+      "args": [
+        123456789
+      ],
+      "expected": 45
+    },
+    {
+      "args": [
+        111111
+      ],
+      "expected": 6
+    },
+    {
+      "args": [
+        909
+      ],
+      "expected": 18
+    },
+    {
+      "args": [
+        1000000
+      ],
+      "expected": 1
+    },
+    {
+      "args": [
+        4005
+      ],
+      "expected": 9
+    },
+    {
+      "args": [
+        70
+      ],
+      "expected": 7
+    },
+    {
+      "args": [
+        19
+      ],
+      "expected": 10
+    },
+    {
+      "args": [
+        1234
+      ],
+      "expected": 10
+    }
+  ]
+}

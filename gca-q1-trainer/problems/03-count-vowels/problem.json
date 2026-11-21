@@ -1,0 +1,153 @@
+{
+  "id": 3,
+  "slug": "count-vowels",
+  "title": "Count Vowels",
+  "difficulty": "easy",
+  "topic": "String charAt loop",
+  "statement": "Given a string `s`, return the number of vowels in it. The vowels are `a`, `e`, `i`, `o`, `u`, in either lower or upper case. All other characters (including `y`) are not vowels.",
+  "returnType": "int",
+  "params": [
+    {
+      "type": "String",
+      "name": "s"
+    }
+  ],
+  "examples": [
+    {
+      "args": [
+        "CodeSignal"
+      ],
+      "expected": 4,
+      "explanation": "o, e, i and a are vowels."
+    },
+    {
+      "args": [
+        "Programming is fun"
+      ],
+      "expected": 5,
+      "explanation": "o, a, i (Programming), i (is), u (fun)."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length() <= 100",
+    "s consists of printable ASCII characters"
+  ],
+  "visible": [
+    {
+      "args": [
+        "hello"
+      ],
+      "expected": 2
+    },
+    {
+      "args": [
+        "rhythm"
+      ],
+      "expected": 0
+    },
+    {
+      "args": [
+        "banana"
+      ],
+      "expected": 3
+    }
+  ],
+  "hidden": [
+    {
+      "args": [
+        "A"
+      ],
+      "expected": 1
+    },
+    {
+      "args": [
+        "a"
+      ],
+      "expected": 1
+    },
+    {
+      "args": [
+        "b"
+      ],
+      "expected": 0
+    },
+    {
+      "args": [
+        "AEIOU"
+      ],
+      "expected": 5
+    },
+    {
+      "args": [
+        "aeiou"
+      ],
+      "expected": 5
+    },
+    {
+      "args": [
+        "AeIoU"
+      ],
+      "expected": 5
+    },
+    {
+      "args": [
+        "bcdfg"
+      ],
+      "expected": 0
+    },
+    {
+      "args": [
+        "BCDFG"
+      ],
+      "expected": 0
+    },
+    {
+      "args": [
+        "aaaaaaaaaa"
+      ],
+      "expected": 10
+    },
+    {
+      "args": [
+        "Y y"
+      ],
+      "expected": 0
+    },
+    {
+      "args": [
+        "12345 !?"
+      ],
+      "expected": 0
+    },
+    {
+      "args": [
+        "Hello, World!"
+      ],
+      "expected": 3
+    },
+    {
+      "args": [
+        "UNIVERSITY"
+      ],
+      "expected": 4
+    },
+    {
+      "args": [
+        "queue"
+      ],
+      "expected": 4
+    },
+    {
+      "args": [
+        "a e i o u"
+      ],
+      "expected": 5
+    },
+    {
+      "args": [
+        "The quick brown fox jumps over the lazy dog"
+      ],
+      "expected": 11
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "id": 8,
+  "slug": "second-largest-distinct",
+  "title": "Second Largest Distinct",
+  "difficulty": "tricky",
+  "topic": "Min/max tracking with duplicates",
+  "statement": "Given an array of integers `a`, return the second largest DISTINCT value in the array. If the array has fewer than two distinct values, return -1.\n\nDuplicates of the maximum do not count as the second largest: in [4, 4, 3] the answer is 3.",
+  "returnType": "int",
+  "params": [
+    {
+      "type": "int[]",
+      "name": "a"
+    }
+  ],
+  "examples": [
+    {
+      "args": [
+        [
+          4,
+          4,
+          3
+        ]
+      ],
+      "expected": 3,
+      "explanation": "Distinct values are 4 and 3; the second largest is 3."
+    },
+    {
+      "args": [
+        [
+          9,
+          9
+        ]
+      ],
+      "expected": -1,
+      "explanation": "Only one distinct value."
+    }
+  ],
+  "constraints": [
+    "1 <= a.length <= 100",
+    "-10^9 <= a[i] <= 10^9"
+  ],
+  "visible": [
+    {
+      "args": [
+        [
+          3,
+          1,
+          2
+        ]
+      ],
+      "expected": 2
+    },
+    {
+      "args": [
+        [
+          5
+        ]
+      ],
+      "expected": -1
+    },
+    {
+      "args": [
+        [
+          -3,
+          -1,
+          -2
+        ]
+      ],
+      "expected": -2
+    }
+  ],
+  "hidden": [
+    {
+      "args": [
+        [
+          7
+        ]
+      ],
+      "expected": -1
+    },
+    {
+      "args": [
+        [
+          0
+        ]
+      ],
+      "expected": -1
+    },
+    {
+      "args": [
+        [
+          5,
+          5,
+          5
+        ]
+      ],
+      "expected": -1
+    },
+    {
+      "args": [
+        [
+          1,
+          2
+        ]
+      ],
+      "expected": 1
+    },
+    {
+      "args": [
+        [
+          2,
+          1
+        ]
+      ],
+      "expected": 1
+    },
+    {
+      "args": [
+        [
+          9,
+          9,
+          8
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "args": [
+        [
+          8,
+          9,
+          9
+        ]
+      ],
+      "expected": 8
+    },
+    {
+      "args": [
+        [
+          -5,
+          -5
+        ]
+      ],
+      "expected": -1
+    },
+    {
+      "args": [
+        [
+          -2,
+          -1,
+          -1
+        ]
+      ],
+      "expected": -2
+    },
+    {
+      "args": [
+        [
+          -1,
+          0
+        ]
+      ],
+      "expected": -1
+    },
+    {
+      "args": [
+        [
+          1000000000,
+          -1000000000
+        ]
+      ],
+      "expected": -1000000000
+    },
+    {
+      "args": [
+        [
+          -1000000000,
+          -1000000000,
+          -999999999
+        ]
+      ],
+      "expected": -1000000000
+    },
+    {
+      "args": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "expected": 4
+    },
+    {
+      "args": [
+        [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      ],
+      "expected": 4
+    },
+    {
+      "args": [
+        [
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ]
+      ],
+      "expected": 2
+    },
+    {
+      "args": [
+        [
+          0,
+          0,
+          0,
+          -1
+        ]
+      ],
+      "expected": -1
+    },
+    {
+      "args": [
+        [
+          10,
+          20,
+          20,
+          10
+        ]
+      ],
+      "expected": 10
+    }
+  ]
+}

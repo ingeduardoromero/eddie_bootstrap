@@ -1,0 +1,4 @@
+node_modules
+dist
+public/ecj.jar
+src/data/problems.generated.json
