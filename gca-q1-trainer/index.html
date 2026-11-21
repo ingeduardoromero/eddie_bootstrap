@@ -6,6 +6,41 @@
 <meta name="theme-color" content="#0f172a">
 <title>GCA Q1 Trainer</title>
 <link rel="stylesheet" href="/src/style.css">
+<script>
+// Error banner: classic (non-module) script so it works even if the app bundle fails to load/parse.
+(function () {
+  var shown = 0;
+  function show(msg) {
+    try {
+      var el = document.getElementById('errbanner');
+      if (!el) {
+        el = document.createElement('div'); el.id = 'errbanner';
+        el.style.cssText = 'position:fixed;left:0;right:0;top:0;z-index:99999;max-height:50vh;overflow:auto;background:#7f1d1d;color:#fff;font:13px/1.4 ui-monospace,Menlo,monospace;padding:10px 12px;white-space:pre-wrap;word-break:break-word';
+        var b = document.createElement('button'); b.textContent = 'Dismiss'; b.style.cssText = 'float:right;margin-left:8px;min-height:36px;padding:0 12px';
+        b.onclick = function () { el.remove(); }; el.appendChild(b);
+        el.appendChild(document.createElement('div')).id = 'errmsgs';
+        (document.body || document.documentElement).appendChild(el);
+      }
+      if (shown++ < 8) document.getElementById('errmsgs').appendChild(document.createTextNode('\u26A0 ' + msg + '\n'));
+    } catch (e) {}
+  }
+  window.addEventListener('error', function (e) {
+    var t = e.target;
+    if (t && t !== window && (t.src || t.href)) show('Failed to load: ' + (t.src || t.href));
+    else show((e.message || 'Error') + (e.filename ? '\n  at ' + e.filename + ':' + e.lineno + ':' + e.colno : ''));
+  }, true);
+  window.addEventListener('unhandledrejection', function (e) {
+    var r = e.reason; show('Unhandled: ' + (r && r.stack ? r.stack : String(r)));
+  });
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      var app = document.getElementById('app');
+      if (app && !app.children.length) show('App did not start (nothing rendered). UA: ' + navigator.userAgent);
+    }, 2500);
+  });
+})();
+</script>
+
 </head>
 <body>
 <div id="app"></div>
